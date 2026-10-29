@@ -33,7 +33,8 @@ Do not invent anything. Mark each claim you could not verify as unverified. Sepa
 
 Pick the sections that fit the purpose. Leave out any that would be empty. Order them in the order the reader needs them.
 
-1. **Header**: date, purpose, reader, question, and a one-line headline. Add project path / branch / commits when code is involved.
+1. **Header**: date, author, purpose, reader, question, and a one-line headline. Add project path / branch / commits when code is involved.
+   - **Author (著者)**: put it right next to the date. Write the model developer, model name and reasoning effort of the agent writing the report, as `<developer> · <model> · effort <level>`. Use only what you actually know about yourself from your own context; write `不明` for any part you cannot tell, never guess.
 2. **TL;DR / conclusion**: 3–5 bullets. Answer the question first.
 3. **Background / premises**: only what the reader needs to follow the body. Define terms once.
 4. **Body**: the main part, as one card per topic. Use whatever each topic needs:
@@ -59,7 +60,7 @@ Use collapsible `<details>` for long material most readers can skip (full logs, 
 - Interactivity only where it helps understanding: tabs to switch between options, a toggle to switch views, `<details>`, hover/click to highlight a diagram part. Every motion is a result of a user action.
 - Look: follow `~/dev/design/DESIGN.md` (colours, fonts, lines, copy). A monospace font may appear only inside `pre`/`code`.
 - Escape `<`, `>` and `&` in all code.
-- Add `<meta name="report:purpose">`, `<meta name="report:question">` and, when code is involved, `<meta name="report:project">` so later tooling can grep them.
+- Add `<meta name="report:author">` (same text as the author field), `<meta name="report:purpose">`, `<meta name="report:question">` and, when code is involved, `<meta name="report:project">` so later tooling can grep them.
 
 ## 5. Save
 
